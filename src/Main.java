@@ -1,27 +1,20 @@
 import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Agency agency = new Agency();
-        AgencyServiceImpl a = new AgencyServiceImpl();
+        Scanner scanner = new Scanner(System.in);
+        Triangle t = new Triangle();
+        System.out.println("Ведите сторону треугольника для того чтобы узнать плошать.");
+        System.out.print("Сторона (a); ");
+        double areaA = scanner.nextDouble();
+        System.out.print("сторона (b); ");
+        double areaB = scanner.nextDouble();
+        System.out.print("сторона (c); ");
+        double areaC = scanner.nextDouble();
 
+        System.out.println();
+        System.out.print("результат: "+t.getArea(areaA,areaB,areaC));
 
-        while (true) {
-            try {
-                Scanner scanner = new Scanner(System.in);
-                System.out.println("выбери дейстиве" +
-                        "\n1.добавить агента" +
-                        "\n2.вы вод всех агентов" +
-                        "\n3.пере имена вать агента" +
-                        "\n4.удалить агента" +
-                        "\n5.выйти");
-                int sample =scanner.nextInt();
-                switch (sample){
-                    case 1-> {
-                        
-                    }
-                }
-            }
-        }
     }
 }
